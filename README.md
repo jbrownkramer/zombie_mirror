@@ -1,6 +1,6 @@
 # Zombie Mirror
 
-Zombie Mirror is a project created by Ben Rush and Josh Brown Kramer for Halloween 2019.  Look into the Zombie Mirror, wait for it to find your face, and ... POOF! ... you're a Zombie.  It's a lot of fun at parties.[PICTURES NEEDED]
+Zombie Mirror is a project created by [Ben Rush](https://github.com/kwende/) and [Josh Brown Kramer](https://github.com/jbrownkramer/) for Halloween 2019.  Look into the Zombie Mirror, wait for it to find your face, and ... POOF! ... you're a Zombie.  It's a lot of fun at parties.[PICTURES NEEDED]
 
 Behind the scenes, Zombie Mirror consists of a monitor or TV connected to a Raspberry Pi running a program that finds faces.  If it finds one, it sends it up to DeepGrave.me (also created by Josh and Ben) which uses a type of deep neural network called a CycleGAN to zombify the face.
 
