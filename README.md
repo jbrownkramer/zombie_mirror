@@ -49,13 +49,13 @@ python3 ui.py
 7. Press q to exit
 
 ### Configure Raspberry Pi To Not Sleep
-1. Open a root terminal in raspberry Pi. Now  you need to edit your script that's starting X. In the default build with lightdm.
+1. Open a root terminal in raspberry Pi.
 
 2. Open "lightdm.conf" file located in, 
 
      /etc/lightdm/lightdm.conf
 
-3. Add the following line to `Seat:*` section.
+3. Add the following line to the `Seat:*` section.
 
      [Seat:*]
      
