@@ -102,8 +102,8 @@ python3 ui.py --cameraorientation 180 --displayorientation 270 --mirrored False 
 - `--minfacesize`. set this smaller if the mirror tells you to move closer but you're already close.  Default is 128.
 - `--zombietime`. amount of time, in seconds, to display the zombie image.  Default is 5.
 - `--fontsize`.  How large the font is.  Default is 128.
-- `--cameraresolution`.  Desired camera resolution.  Default is "1280x720".  Set it smaller if you want the framerate to be higher.
-- `--webtimeout`.  Time in seconds to wait for zombie image before timing out.
+- `--cameraresolution`.  Desired camera resolution.  Set it smaller if you want the framerate to be higher.  Default is "1280x720".  
+- `--webtimeout`.  Time in seconds to wait for zombie image before timing out.  Default is 6.
 
 ## Not ready for prime time:
 Think this is minimal install of Pillow:
