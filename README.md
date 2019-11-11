@@ -7,7 +7,7 @@ Zombie Mirror is a project created by [Ben Rush](https://github.com/kwende/) and
 
 Behind the scenes, Zombie Mirror consists of a monitor or TV connected to a Raspberry Pi running a program that finds faces.  If it finds one, it sends it up to DeepGrave.me (also created by Josh and Ben) which uses a type of deep neural network called a CycleGAN to zombify the face.
 
-This is the repo for the Raspberry Pi side of the Zombie Mirror project.  If you would like to create your own, follow the instructions below to set up the Raspberry Pi, and see the Instructables page [LINK TO INSTRUCTABLES PAGE] for the rest.
+This is the repo for the Raspberry Pi side of the Zombie Mirror project.  If you would like to create your own, follow the instructions below to set up the Raspberry Pi, and see the Instructables page for the rest.
 
 ## Required Materials
 
