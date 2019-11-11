@@ -82,7 +82,7 @@ Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-
 
 - `--cameraorientation`.  Use this argument to indicate how the camera is oriented.  Default is 180.
      
-| <img src="0.png"> | <img src="90.png"> | <img src="180.png"> | <img src="270.png"> |
+| <img src="readmeImages/0.png"> | <img src="readmeImages/90.png"> | <img src="readmeImages/180.png"> | <img src="readmeImages/270.png"> |
 |---|---|---|---|
 | `python3 ui.py --cameraorientation 0` | `python3 ui.py --cameraorientation 90`  | `python3 ui.py --cameraorientation 180`  | `python3 ui.py --cameraorientation 270` |
      parser.add_argument("-d","--displayorientation",default=270,type=int,choices=[0,90,180,270], help="How you've oriented the display")
