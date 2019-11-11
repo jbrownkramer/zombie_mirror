@@ -1,6 +1,6 @@
 # Zombie Mirror
 
-| <img src="readmeImages/mirror0.png"> | <img src="readmeImages/mirror1.png"> | <img src="readmeImages/mirror2.png"> | <img src="readmeImages/mirror3.png"> |
+| <img src="readmeImages/mirror0.jpg"> | <img src="readmeImages/mirror1.jpg"> | <img src="readmeImages/mirror2.jpg"> | <img src="readmeImages/mirror3.jpg"> |
 |---|---|---|---|
 
 Zombie Mirror is a project created by [Ben Rush](https://github.com/kwende/) and [Josh Brown Kramer](https://github.com/jbrownkramer/) for Halloween 2019.  Look into the Zombie Mirror, wait for it to find your face, and ... POOF! ... you're a Zombie.  It's a lot of fun at parties.
