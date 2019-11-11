@@ -32,7 +32,7 @@ While setting up, you'll also want
 4. Open a terminal
 3. Clone this repo
 ```
-git https://github.com/jbrownkramer/zombiemirror/
+git clone https://github.com/jbrownkramer/zombiemirror/
 ```
 4. Navigate to the pi directory of the repo
 ```
