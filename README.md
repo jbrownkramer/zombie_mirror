@@ -82,13 +82,21 @@ Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-
 
 - `--cameraorientation`.  Use this argument to indicate how the camera is oriented.  Default is 180.
      
-| <img src="0.png"> | <img src="90.png"> | <img src="180.png"> | <img src="270.png"> |
+| <img src="readmeImages/0.png"> | <img src="readmeImages/90.png"> | <img src="readmeImages/180.png"> | <img src="readmeImages/270.png"> |
 |---|---|---|---|
 | `python3 ui.py --cameraorientation 0` | `python3 ui.py --cameraorientation 90`  | `python3 ui.py --cameraorientation 180`  | `python3 ui.py --cameraorientation 270` |
-     parser.add_argument("-d","--displayorientation",default=270,type=int,choices=[0,90,180,270], help="How you've oriented the display")
-    parser.add_argument("-m", "--mirrored", type=bool, default=False, help="Configure true if the image is mirrored")
-    parser.add_argument("--minfacesize", type=int, default=128, help="Min detected face size in the original image")
-    parser.add_argument("--zombietime", type=float, default=5, help="Time is seconds to display zombie image")
+
+- `--displayorientation`.  Use this argument to indicate how the monitor/TV is oriented.  Default is 270.
+     
+| <img src="readmeImages/monitor0.png"> | <img src="readmeImages/monitor90.png"> | <img src="readmeImages/monitor180.png"> | <img src="readmeImages/monitor270.png"> |
+|---|---|---|---|
+| `python3 ui.py --displayorientation 0` | `python3 ui.py --displayorientation 90`  | `python3 ui.py --displayorientation 180`  | `python3 ui.py --displayorientation 270` |
+
+- `--mirrored`. Configure True if unaltered image from the camera is mirrored.  Default is False.
+- `--minfacesize`. set this smaller if the mirror tells you to move closer but you're already close.  Default is 128.
+- `--zombietime`. amount of time, in seconds, to display the zombie image.  Default is 5.
+- `--fontsize`.  How large the font is.  Default is 128.
+- `--cameraresolution`.  Desired camera resolution.  Default is "1280x720".  Set it smaller if you 
     parser.add_argument("-f","--fontsize", type=int, default=128, help="Size of font")
     parser.add_argument("-r","--cameraresolution", type=resolution, default=(1920,1080), help="Desired Camera Resolution")
     parser.add_argument("-t","--webtimeout", type=float, default=6, help="Time it will wait for response from server")
