@@ -27,16 +27,16 @@ While setting up, you'll also want
 ## Steps
 
 ### Put the Zombie Mirror software on the Raspberry Pi
-1. Follow [the instructions from raspberrypi.org to set up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/).
+1. Follow [the instructions from raspberrypi.org to get your Pi up and running]((https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/).
 2. Follow [the instructions from raspberrypi.org to set up the pi camera](https://www.raspberrypi.org/documentation/configuration/camera.md).  Or plug in your USB web cam.
 4. Open a terminal
 3. Clone this repo
 ```
-git clone https://github.com/kwende/Halloween/
+git https://github.com/jbrownkramer/zombiemirror/
 ```
 4. Navigate to the pi directory of the repo
 ```
-cd Halloween/pi
+cd zombiemirror
 ```
 5. Install required pacakages
 ```
@@ -47,22 +47,6 @@ pip3 install -r requirements.txt
 python3 ui.py
 ```
 7. Press q to exit
-
-### Configure Raspberry Pi to boot into Zombie Mirror
-1. Navigate to `~/.config/lxsession/LXDE-pi`
-```
-cd ~/.config/lxsession/LXDE-pi
-```
-2. Open the autostart file in that folder:
-```
-sudo nano autostart
-```
-3. Navigate to the bottom of the file and add the following line.
-```
-@python3 /home/pi/Halloween/pi/ui.py
-```
-4. Save and exit: <kbd>Ctrl+X</kbd>, <kbd>Y</kbd>, <kbd>Enter</kbd>
-5. Restart your Raspberry Pi
 
 ### Configure Raspberry Pi To Not Sleep
 1. Open a root terminal in raspberry Pi. Now  you need to edit your script that's starting X. In the default build with lightdm.
@@ -77,13 +61,27 @@ sudo nano autostart
      
      xserver-command=X -s 0 -dpms
 
-4. Restart your Raspberry Pi.
-
 Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-mode-how-to-avoid
+
+### Configure Raspberry Pi to boot into Zombie Mirror
+1. Navigate to `~/.config/lxsession/LXDE-pi`
+```
+cd ~/.config/lxsession/LXDE-pi
+```
+2. Open the autostart file in that folder:
+```
+sudo nano autostart
+```
+3. Navigate to the bottom of the file and add the following line.
+```
+@python3 /home/pi/zombiemirror/ui.py
+```
+4. Save and exit: <kbd>Ctrl+X</kbd>, <kbd>Y</kbd>, <kbd>Enter</kbd>
+5. Restart your Raspberry Pi
 
 ### Optional Configuration
 
-Here is an example that runs the ui with default settings.  Details of each configuration appear below.
+You may need to change some things if your setup isn't exactly like the one described in the Instructables.  Here is an example of all the optional configs that runs the ui with default settings.  Details of each configuration appear below.
 
 ```
 python3 ui.py --cameraorientation 180 --displayorientation 270 --mirrored False --minfacesize 128 --zombietime 5 --fontsize 128 --cameraresolution 1280x720 --webtimeout 6
@@ -93,13 +91,13 @@ python3 ui.py --cameraorientation 180 --displayorientation 270 --mirrored False 
      
 | <img src="readmeImages/0.png"> | <img src="readmeImages/90.png"> | <img src="readmeImages/180.png"> | <img src="readmeImages/270.png"> |
 |---|---|---|---|
-| `python3 ui.py --cameraorientation 0` | `python3 ui.py --cameraorientation 90`  | `python3 ui.py --cameraorientation 180`  | `python3 ui.py --cameraorientation 270` |
+| `--cameraorientation 0` | `--cameraorientation 90`  | `--cameraorientation 180`  | `--cameraorientation 270` |
 
 - `--displayorientation`.  Use this argument to indicate how the monitor/TV is oriented.  Default is 270.
      
 | <img src="readmeImages/monitor0.png"> | <img src="readmeImages/monitor90.png"> | <img src="readmeImages/monitor180.png"> | <img src="readmeImages/monitor270.png"> |
 |---|---|---|---|
-| `python3 ui.py --displayorientation 0` | `python3 ui.py --displayorientation 90`  | `python3 ui.py --displayorientation 180`  | `python3 ui.py --displayorientation 270` |
+| `--displayorientation 0` | `--displayorientation 90`  | `--displayorientation 180`  | `--displayorientation 270` |
 
 - `--mirrored`. Configure True if unaltered image from the camera is mirrored.  Default is False.
 - `--minfacesize`. set this smaller if the mirror tells you to move closer but you're already close.  Default is 128.
