@@ -88,9 +88,9 @@ Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-
 
 - `--displayorientation`.  Use this argument to indicate how the monitor/TV is oriented.  Default is 270.
      
-| <img src="readmeImages/monitor0.png"> | <img src="readmeImages/90.png"> | <img src="readmeImages/180.png"> | <img src="readmeImages/270.png"> |
+| <img src="readmeImages/monitor0.png"> | <img src="readmeImages/monitor90.png"> | <img src="readmeImages/monitor180.png"> | <img src="readmeImages/monitor270.png"> |
 |---|---|---|---|
-| `python3 ui.py --cameraorientation 0` | `python3 ui.py --cameraorientation 90`  | `python3 ui.py --cameraorientation 180`  | `python3 ui.py --cameraorientation 270` |
+| `python3 ui.py --displayorientation 0` | `python3 ui.py --displayorientation 90`  | `python3 ui.py --displayorientation 180`  | `python3 ui.py --displayorientation 270` |
      parser.add_argument("-d","--displayorientation",default=270,type=int,choices=[0,90,180,270], help="How you've oriented the display")
     parser.add_argument("-m", "--mirrored", type=bool, default=False, help="Configure true if the image is mirrored")
     parser.add_argument("--minfacesize", type=int, default=128, help="Min detected face size in the original image")
