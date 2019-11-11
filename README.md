@@ -81,7 +81,7 @@ sudo nano autostart
 
 ### Optional Configuration
 
-You may need to change some things if your setup isn't exactly like the one described in the Instructables.  Here is an example of all the optional configs that runs the ui with default settings.  Details of each configuration appear below.
+You may need to change some things if your setup isn't exactly like the one described in the Instructables.  Here is an example of all the optional configs.  Details of each configuration appear below.
 
 ```
 python3 ui.py --cameraorientation 180 --displayorientation 270 --mirrored False --minfacesize 128 --zombietime 5 --fontsize 128 --cameraresolution 1280x720 --webtimeout 6
