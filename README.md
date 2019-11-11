@@ -29,24 +29,24 @@ While setting up, you'll also want
 ### Put the Zombie Mirror software on the Raspberry Pi
 1. Follow [the instructions from raspberrypi.org to get your Pi up and running](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/).
 2. Follow [the instructions from raspberrypi.org to set up the Raspberry Pi Camera Module](https://www.raspberrypi.org/documentation/configuration/camera.md).  Or plug in your USB web cam.
-4. Open a terminal
-3. Clone this repo
+4. Open a terminal.
+3. Clone this repo.
 ```
 git clone https://github.com/jbrownkramer/zombiemirror/
 ```
-4. Navigate to the repo
+4. Navigate to the repo.
 ```
 cd zombiemirror
 ```
-5. Install required pacakages
+5. Install required pacakages.
 ```
 pip3 install -r requirements.txt
 ```
-6. Test
+6. Test.
 ```
 python3 ui.py
 ```
-7. Press q to exit
+7. Press q to exit.
 
 ### Configure Raspberry Pi To Not Sleep
 1. Open a root terminal in raspberry Pi.
@@ -64,11 +64,11 @@ python3 ui.py
 Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-mode-how-to-avoid
 
 ### Configure Raspberry Pi to boot into Zombie Mirror
-1. Navigate to `~/.config/lxsession/LXDE-pi`
+1. Navigate to `~/.config/lxsession/LXDE-pi`.
 ```
 cd ~/.config/lxsession/LXDE-pi
 ```
-2. Open the autostart file in that folder:
+2. Open the autostart file in that folder.
 ```
 sudo nano autostart
 ```
@@ -76,8 +76,8 @@ sudo nano autostart
 ```
 @python3 /home/pi/zombiemirror/ui.py
 ```
-4. Save and exit: <kbd>Ctrl+X</kbd>, <kbd>Y</kbd>, <kbd>Enter</kbd>
-5. Restart your Raspberry Pi
+4. Save and exit: <kbd>Ctrl+X</kbd>, <kbd>Y</kbd>, <kbd>Enter</kbd>.
+5. Restart your Raspberry Pi.
 
 ### Optional Configuration
 
