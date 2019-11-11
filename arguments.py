@@ -9,7 +9,7 @@ def parsed_args():
     parser.add_argument("--minfacesize", type=int, default=128, help="Min detected face size in the original image")
     parser.add_argument("--zombietime", type=float, default=5, help="Time is seconds to display zombie image")
     parser.add_argument("-f","--fontsize", type=int, default=128, help="Size of font")
-    parser.add_argument("-r","--cameraresolution", type=resolution, default=(1920,1080), help="Desired Camera Resolution")
+    parser.add_argument("-r","--cameraresolution", type=resolution, default=(1280,720), help="Desired Camera Resolution")
     parser.add_argument("-t","--webtimeout", type=float, default=6, help="Time it will wait for response from server")
 
 
