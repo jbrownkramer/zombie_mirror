@@ -80,6 +80,12 @@ Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-
 
 ### Optional Configuration
 
+Here is an example that runs the ui with default settings.  Details of each configuration appear below.
+
+```
+python3 ui.py --cameraorientation 180 --displayorientation 270 --mirrored False --minfacesize 128 --zombietime 5 --fontsize 128 --cameraresolution 1280x720 --webtimeout 6
+```
+
 - `--cameraorientation`.  Use this argument to indicate how the camera is oriented.  Default is 180.
      
 | <img src="readmeImages/0.png"> | <img src="readmeImages/90.png"> | <img src="readmeImages/180.png"> | <img src="readmeImages/270.png"> |
@@ -96,10 +102,8 @@ Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-
 - `--minfacesize`. set this smaller if the mirror tells you to move closer but you're already close.  Default is 128.
 - `--zombietime`. amount of time, in seconds, to display the zombie image.  Default is 5.
 - `--fontsize`.  How large the font is.  Default is 128.
-- `--cameraresolution`.  Desired camera resolution.  Default is "1280x720".  Set it smaller if you 
-    parser.add_argument("-f","--fontsize", type=int, default=128, help="Size of font")
-    parser.add_argument("-r","--cameraresolution", type=resolution, default=(1920,1080), help="Desired Camera Resolution")
-    parser.add_argument("-t","--webtimeout", type=float, default=6, help="Time it will wait for response from server")
+- `--cameraresolution`.  Desired camera resolution.  Default is "1280x720".  Set it smaller if you want the framerate to be higher.
+- `--webtimeout`.  Time in seconds to wait for zombie image before timing out.
 
 ## Not ready for prime time:
 Think this is minimal install of Pillow:
