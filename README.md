@@ -40,6 +40,9 @@ cd zombiemirror
 ```
 5. Install required pacakages.
 ```
+sudo apt-get install libjpeg-dev
+```
+```
 pip3 install -r requirements.txt
 ```
 6. Test.
