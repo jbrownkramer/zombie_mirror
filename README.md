@@ -28,13 +28,13 @@ While setting up, you'll also want
 
 ### Put the Zombie Mirror software on the Raspberry Pi
 1. Follow [the instructions from raspberrypi.org to get your Pi up and running](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/).
-2. Follow [the instructions from raspberrypi.org to set up the pi camera](https://www.raspberrypi.org/documentation/configuration/camera.md).  Or plug in your USB web cam.
+2. Follow [the instructions from raspberrypi.org to set up the Raspberry Pi Camera Module](https://www.raspberrypi.org/documentation/configuration/camera.md).  Or plug in your USB web cam.
 4. Open a terminal
 3. Clone this repo
 ```
 git clone https://github.com/jbrownkramer/zombiemirror/
 ```
-4. Navigate to the pi directory of the repo
+4. Navigate to the repo
 ```
 cd zombiemirror
 ```
