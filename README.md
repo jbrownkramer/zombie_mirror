@@ -72,22 +72,6 @@ python3 ui.py
 
 Source: https://raspberrypi.stackexchange.com/questions/4773/raspberry-pi-sleep-mode-how-to-avoid
 
-### Configure Raspberry Pi to boot into Zombie Mirror
-1. Navigate to `~/.config/lxsession/LXDE-pi`.
-```
-cd ~/.config/lxsession/LXDE-pi
-```
-2. Open the autostart file in that folder.
-```
-sudo nano autostart
-```
-3. Navigate to the bottom of the file and add the following line.
-```
-@python3 /home/pi/zombiemirror/ui.py
-```
-4. Save and exit: <kbd>Ctrl+X</kbd>, <kbd>Y</kbd>, <kbd>Enter</kbd>.
-5. Restart your Raspberry Pi.
-
 ### Optional Configuration
 
 You may need to change some things if your setup isn't exactly like the one described in the Instructables.  Here is an example of all the optional configs.  Details of each configuration appear below.
