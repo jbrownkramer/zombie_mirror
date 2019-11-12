@@ -38,24 +38,19 @@ git clone https://github.com/jbrownkramer/zombiemirror/
 ```
 cd zombiemirror
 ```
-5. Install required pacakages.
+5. Follow [these instructions](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/) to install opencv.
+6. Install required pacakages.
 ```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install libjpeg-dev
 pip3 install -r requirements.txt
-sudo apt-get install libatlas-base-dev
-sudo apt-get install libhdf5-dev
-sudo apt-get install libhdf5-serial-dev
-sudo apt-get install libjasper-dev 
-sudo apt-get install libqtgui4 
-sudo apt-get install libqt4-test
 ```
-6. Test.
+7. Test.
 ```
 python3 ui.py
 ```
-7. Press q to exit.
+8. Press q to exit.
 
 ### Configure Raspberry Pi To Not Sleep
 1. Open a root terminal in raspberry Pi.
